@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success!</title>
+</head>
+<body>
+    <div class="container">
+<h1>Success</h1>
+<h3>Your Details Uploaded Successfully to MySQL.</h3>
+    </div>
+    <div class="Data">
+        <p><strong>Name:</strong><span th:text="${submittedData.name}"></span></p>
+        <p><strong>Email:</strong><span th:text="${submittedData.email}"></span></p>
+    </div>
+    <a href="/">Submit Another Response</a>    
+</body>
+</html>
